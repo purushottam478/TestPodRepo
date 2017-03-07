@@ -7,15 +7,13 @@
 //
 
 import UIKit
-import CustomImage
-import CustomButton
-import CustomLabel
-import CustomTextField
+import TestPod
 
 class ViewController: UIViewController {
     
     // All UI elements have an outlet to enable flexibility in customization
     
+    @IBOutlet weak var loginButton: CustomButton!
     @IBOutlet var backgroundView: UIView!
     @IBOutlet weak var headerImage: CustomImage!
     
@@ -35,10 +33,10 @@ class ViewController: UIViewController {
         backgroundView.alpha = 0
         headerImage.alpha = 0
         headerImage.transform = CGAffineTransform(scaleX: 0.001, y: 0.001).concatenating(CGAffineTransform(rotationAngle: CGFloat(M_PI)))
-        usernameLabel.alpha = 0
-        usernameTextfield.alpha = 0
+        loginLabel.alpha = 0
+        loginTextField.alpha = 0
         passwordLabel.alpha = 0
-        passwordTextfield.alpha = 0
+        passwordTextField.alpha = 0
         loginButton.alpha = 0
         signUpButton.alpha = 0
         quitButton.alpha = 0
@@ -49,10 +47,10 @@ class ViewController: UIViewController {
             self.headerImage.alpha = 1
             self.headerImage.transform = CGAffineTransform.identity
         }) { (value: Bool) in
-            self.usernameLabel.alpha = 1
-            self.usernameTextfield.alpha = 1
+            self.loginLabel.alpha = 1
+            self.loginTextField.alpha = 1
             self.passwordLabel.alpha = 1
-            self.passwordTextfield.alpha = 1
+            self.passwordTextField.alpha = 1
             self.loginButton.alpha = 1
             self.signUpButton.alpha = 1
             self.quitButton.alpha = 1

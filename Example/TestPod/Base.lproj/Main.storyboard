@@ -254,7 +254,7 @@
                     <connections>
                         <outlet property="backgroundView" destination="KSf-j9-mtc" id="sun-d2-4jc"/>
                         <outlet property="headerImage" destination="zKL-a8-2Cp" id="s4Q-dx-01K"/>
-                        <outlet property="loginButton" destination="b4U-G3-GMc" id="SDs-Sj-JVf"/>
+                        <outlet property="loginButton" destination="b4U-G3-GMc" id="vYb-iH-MmR"/>
                         <outlet property="loginLabel" destination="WKd-0K-Vwp" id="aph-ob-qst"/>
                         <outlet property="loginTextField" destination="XJQ-IO-NoZ" id="lVT-ef-iYh"/>
                         <outlet property="passwordLabel" destination="JoO-0E-wxG" id="f2d-AQ-inb"/>
