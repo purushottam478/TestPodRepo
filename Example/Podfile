@@ -1,11 +1,11 @@
+platform :ios, '8.0'
 use_frameworks!
 
 target 'TestPod_Example' do
-  pod 'TestPod', :path => '../'
-
-  target 'TestPod_Tests' do
+    pod 'TestPod', :path => '/Users/kuliza-335/Desktop/TestPod'
+    
+target 'TestPod_Tests' do
     inherit! :search_paths
 
-    
   end
 end

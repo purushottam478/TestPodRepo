@@ -2,15 +2,15 @@ PODS:
   - TestPod (0.1.0)
 
 DEPENDENCIES:
-  - TestPod (from `../`)
+  - TestPod (from `/Users/kuliza-335/Desktop/TestPod`)
 
 EXTERNAL SOURCES:
   TestPod:
-    :path: ../
+    :path: /Users/kuliza-335/Desktop/TestPod
 
 SPEC CHECKSUMS:
-  TestPod: 4b31ad2df76153b2ce023cc365c1c3fa0f81787f
+  TestPod: ccb8c9b6a4cc9a952a87d972158903ec5c96536f
 
-PODFILE CHECKSUM: 10818afec5b6ad4b8f48051daf04aef3f18a317d
+PODFILE CHECKSUM: d35c5a3104b321a56292d4bc64cba6c83d6af11c
 
 COCOAPODS: 1.1.1

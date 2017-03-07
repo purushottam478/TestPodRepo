@@ -1,25 +1,273 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TestPod_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="ZkF-TA-Zlo"/>
+                        <viewControllerLayoutGuide type="bottom" id="KVa-Z4-MM3"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="KSf-j9-mtc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4U-G3-GMc" customClass="CustomButton" customModule="TestPod_Example" customModuleProvider="target">
+                                <rect key="frame" x="128" y="423" width="82" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.69411764710000001" green="0.066666666669999999" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColour">
+                                        <color key="value" red="0.87608173079999996" green="0.4384991594" blue="0.046182984900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColour">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffSet">
+                                        <size key="value" width="1" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XJQ-IO-NoZ" customClass="CustomTextField" customModule="TestPod_Example" customModuleProvider="target">
+                                <rect key="frame" x="128" y="307" width="240" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="t96-eO-nCu"/>
+                                </constraints>
+                                <color key="textColor" red="0.87608173079999996" green="0.4384991594" blue="0.046182984900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColour">
+                                        <color key="value" red="0.87608173079999996" green="0.4384991594" blue="0.046182984900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColour">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffSet">
+                                        <size key="value" width="1" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5io-m1-RZz" customClass="CustomTextField" customModule="TestPod_Example" customModuleProvider="target">
+                                <rect key="frame" x="128" y="345" width="240" height="30"/>
+                                <color key="textColor" red="0.96009615380000002" green="0.77099085609999995" blue="0.00018458063299999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColour">
+                                        <color key="value" red="0.87608173079999996" green="0.4384991594" blue="0.046182984900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColour">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffSet">
+                                        <size key="value" width="1" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forestred" translatesAutoresizingMaskIntoConstraints="NO" id="zKL-a8-2Cp" customClass="CustomImage" customModule="TestPod_Example" customModuleProvider="target">
+                                <rect key="frame" x="132" y="92" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="QWZ-pg-WVk"/>
+                                    <constraint firstAttribute="width" constant="150" id="aBv-yW-irG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColour">
+                                        <color key="value" red="0.87608173079999996" green="0.4384991594" blue="0.046182984900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColour">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffSet">
+                                        <size key="value" width="2" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKd-0K-Vwp">
+                                <rect key="frame" x="38" y="307.66666666666669" width="82" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoO-0E-wxG">
+                                <rect key="frame" x="42.333333333333329" y="345.66666666666669" width="77.666666666666657" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27j-hV-Lrj" customClass="CustomButton" customModule="TestPod_Example" customModuleProvider="target">
+                                <rect key="frame" x="286" y="423" width="82" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="Jjg-vY-ZFf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.69411764710000001" green="0.066666666669999999" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColour">
+                                        <color key="value" red="0.87608173079999996" green="0.4384991594" blue="0.046182984900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColour">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffSet">
+                                        <size key="value" width="1" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKI-hQ-Web" customClass="CustomButton" customModule="TestPod_Example" customModuleProvider="target">
+                                <rect key="frame" x="20" y="666" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="I13-EN-GwH"/>
+                                    <constraint firstAttribute="height" constant="50" id="Neo-Xo-zlt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Quit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColour">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffSet">
+                                        <size key="value" width="1" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColour">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.69411764710000001" green="0.066666666669999999" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="b4U-G3-GMc" firstAttribute="height" secondItem="27j-hV-Lrj" secondAttribute="height" id="1go-oU-7NH"/>
+                            <constraint firstItem="wKI-hQ-Web" firstAttribute="leading" secondItem="KSf-j9-mtc" secondAttribute="leading" constant="20" id="2WZ-UC-IoM"/>
+                            <constraint firstItem="27j-hV-Lrj" firstAttribute="trailing" secondItem="XJQ-IO-NoZ" secondAttribute="trailing" id="4n3-G6-q99"/>
+                            <constraint firstItem="JoO-0E-wxG" firstAttribute="centerY" secondItem="5io-m1-RZz" secondAttribute="centerY" id="59z-g7-Cji"/>
+                            <constraint firstItem="XJQ-IO-NoZ" firstAttribute="top" secondItem="zKL-a8-2Cp" secondAttribute="bottom" constant="65" id="8AE-AF-qqS"/>
+                            <constraint firstItem="XJQ-IO-NoZ" firstAttribute="leading" secondItem="KSf-j9-mtc" secondAttribute="leading" constant="128" id="ByB-w6-ekI"/>
+                            <constraint firstItem="JoO-0E-wxG" firstAttribute="height" secondItem="5io-m1-RZz" secondAttribute="height" id="DjH-ns-NTO"/>
+                            <constraint firstItem="WKd-0K-Vwp" firstAttribute="height" secondItem="XJQ-IO-NoZ" secondAttribute="height" id="Fac-7k-mx6"/>
+                            <constraint firstItem="b4U-G3-GMc" firstAttribute="centerY" secondItem="27j-hV-Lrj" secondAttribute="centerY" id="HP2-Ig-0YG"/>
+                            <constraint firstItem="b4U-G3-GMc" firstAttribute="leading" secondItem="XJQ-IO-NoZ" secondAttribute="leading" id="O83-ZR-DtN"/>
+                            <constraint firstAttribute="trailing" secondItem="XJQ-IO-NoZ" secondAttribute="trailing" constant="46" id="PMU-4G-hhu"/>
+                            <constraint firstItem="XJQ-IO-NoZ" firstAttribute="leading" secondItem="WKd-0K-Vwp" secondAttribute="trailing" constant="8" id="PPM-nx-rNt"/>
+                            <constraint firstItem="27j-hV-Lrj" firstAttribute="top" secondItem="XJQ-IO-NoZ" secondAttribute="bottom" constant="86" id="Qs4-mx-QsX"/>
+                            <constraint firstItem="5io-m1-RZz" firstAttribute="centerX" secondItem="XJQ-IO-NoZ" secondAttribute="centerX" id="Z7M-Od-dZh"/>
+                            <constraint firstItem="KVa-Z4-MM3" firstAttribute="top" secondItem="wKI-hQ-Web" secondAttribute="bottom" constant="20" id="cMw-tC-cOG"/>
+                            <constraint firstItem="WKd-0K-Vwp" firstAttribute="centerY" secondItem="XJQ-IO-NoZ" secondAttribute="centerY" id="eCw-TZ-cwW"/>
+                            <constraint firstItem="zKL-a8-2Cp" firstAttribute="centerY" secondItem="KSf-j9-mtc" secondAttribute="centerY" constant="-201" id="hA2-b8-bIU"/>
+                            <constraint firstItem="5io-m1-RZz" firstAttribute="width" secondItem="XJQ-IO-NoZ" secondAttribute="width" id="l4p-nB-o8D"/>
+                            <constraint firstItem="zKL-a8-2Cp" firstAttribute="centerX" secondItem="KSf-j9-mtc" secondAttribute="centerX" id="nqc-dl-Wrr"/>
+                            <constraint firstItem="5io-m1-RZz" firstAttribute="leading" secondItem="JoO-0E-wxG" secondAttribute="trailing" constant="8" id="rJb-sB-Bnc"/>
+                            <constraint firstItem="5io-m1-RZz" firstAttribute="top" secondItem="XJQ-IO-NoZ" secondAttribute="bottom" constant="8" id="xs7-UT-ez6"/>
+                            <constraint firstItem="b4U-G3-GMc" firstAttribute="width" secondItem="27j-hV-Lrj" secondAttribute="width" id="yyl-Yh-sMb"/>
+                            <constraint firstItem="b4U-G3-GMc" firstAttribute="top" secondItem="XJQ-IO-NoZ" secondAttribute="bottom" constant="86" id="zhA-La-kBk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="KSf-j9-mtc" id="sun-d2-4jc"/>
+                        <outlet property="headerImage" destination="zKL-a8-2Cp" id="s4Q-dx-01K"/>
+                        <outlet property="loginButton" destination="b4U-G3-GMc" id="SDs-Sj-JVf"/>
+                        <outlet property="loginLabel" destination="WKd-0K-Vwp" id="aph-ob-qst"/>
+                        <outlet property="loginTextField" destination="XJQ-IO-NoZ" id="lVT-ef-iYh"/>
+                        <outlet property="passwordLabel" destination="JoO-0E-wxG" id="f2d-AQ-inb"/>
+                        <outlet property="passwordTextField" destination="5io-m1-RZz" id="fKi-Wx-vFs"/>
+                        <outlet property="quitButton" destination="wKI-hQ-Web" id="YJh-G8-PF1"/>
+                        <outlet property="signUpButton" destination="27j-hV-Lrj" id="2VG-8s-I8K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="forestred" width="16" height="16"/>
+    </resources>
 </document>

@@ -1,9 +1,9 @@
 {
   "name": "TestPod",
   "version": "0.1.0",
-  "summary": "A short description of TestPod.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/purushottam478/TestPod",
+  "summary": "TestPod summary desciption",
+  "description": "Just another description for TestPod. To edit, open podspec in XCode.",
+  "homepage": "https://github.com/purushottam478/TestPodRepo",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
